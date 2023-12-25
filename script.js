@@ -102,15 +102,13 @@ function collison(params)
      return true
    } 
  
-//    for (let i = 1; i < parts.length; i++) {
-//      if (parts[0].style.gridRowStart==parts[i].style.gridRowStart&&parts[0].style.gridColumnStart==parts[i].style.gridColumnStart) {
-//         gameover()
-//      }
-//    }
+   for (let i = 1; i < parts.length; i++) {
+     if (parts[0].style.gridRowStart==parts[i].style.gridRowStart&&parts[0].style.gridColumnStart==parts[i].style.gridColumnStart) {
+        gameover()
+     }
+   }
   if (food.style.gridRow==snakeElement.style.gridRow&&food.style.gridColumn==snakeElement.style.gridColumn) {
-    for (let index = 0; index < x; index++) {
       aftereatingfood()  
-    }
   }
 }
 
